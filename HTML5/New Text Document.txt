@@ -1,0 +1,9 @@
+Tomato
+Orange
+DodgerBlue
+MediumSeaGreen
+Gray
+SlateBlue
+Violet
+LightGray
+
