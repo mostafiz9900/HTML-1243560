@@ -1,9 +1,27 @@
 #hh{
 	color:#298CE1;
+	text-align:center;
+	font-size:50px;
 }
-#hhh{
+
+
+#hhhh{
 	color:#FFA300;
+	font-size:40px;
+	text-align:right;
 }
+#dd{
+	color:#0078D7;
+	font-size:20px;
+	text-align:center;
+}
+
 .abc{
-	color:#FFE340;
+	color:#ED1628;
+	font-size:20px;
+}
+.abcd{
+	color:#5BB734;
+	font-size:20px;
+	text-align:center;
 }
