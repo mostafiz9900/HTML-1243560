@@ -26,7 +26,7 @@
 #heading{
     font-size: 30px;
     text-align: center;
-     color: #00A7E4;
+     color: #FFFFFF;
    
     
     
@@ -53,6 +53,15 @@
     text-justify: auto;
    
     
+}
+#manu a:hover{
+    text-decoration: none;  
+    padding: 0px 25px; 
+    line-height: 2;
+    color: #0E1718;
+    font-weight: 900;
+    text-justify: auto;
+   
 }
      /**************body start************/          
 #body{
@@ -107,6 +116,11 @@ padding: 0 10px;
     padding: 0 5px;
 }
 /**************body end*****************************/
+#aaaaa{
+    width:100%;
+    height:300px;
+    background-color: #EDC363;
+}
 #footer{
     width:100%;
     height:100px;
@@ -157,4 +171,9 @@ padding: 0 10px;
     background-color: #00AAE8;
     font-size: 14px;
     line-height: 3;
+}
+#dowen{
+    width:100%;
+    height:300px;
+    background-color: #EDC363;
 }
