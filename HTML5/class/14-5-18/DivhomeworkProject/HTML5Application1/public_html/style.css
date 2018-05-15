@@ -1,8 +1,14 @@
 
+body{
+  background: lightblue url("image/a3.jpg") no-repeat; 
+ 
+   
+}
 #wrapper{
     width:80%;
     height:auto;
     margin: 0 auto;
+    
   
     
 }
@@ -42,17 +48,56 @@
 #manu{
    width:100%;
     height:30px; 
-    background-color: #C4BA38;
+    
+         padding: 14px 0;
+      border: none;
+    color: white;
+    
 }
 #manu a{
     text-decoration: none;  
-    padding: 0px 25px; 
+    padding: 14px 25px; 
     line-height: 2;
-    color: #0E1718;
+    color: #FFFFFF;
     font-weight: 900;
     text-justify: auto;
    
     
+}
+.a1{
+   background-color: #96FF96; 
+   width:14%;
+    height:30px; 
+}
+.a2{
+   background-color: #DF6054;
+   width:14%;
+    height:30px; 
+}
+.a3{
+    background-color: #00A9E7;
+    width:14%;
+    height:30px; 
+}
+.a4{
+    background-color: #96FF96;
+    width:14%;
+    height:30px; 
+}
+.a5{
+    background-color: #1B2436;
+    width:14%;
+    height:30px; 
+}
+.a6{
+    background-color: #ACB8C2;
+    width:14%;
+    height:30px; 
+}
+.a7{
+   background-color: #0078D7; 
+   width:14%;
+    height:30px; 
 }
 #manu a:hover{
     text-decoration: none;  
@@ -116,11 +161,33 @@ padding: 0 10px;
     padding: 0 5px;
 }
 /**************body end*****************************/
-#aaaaa{
+#aa{
     width:100%;
     height:300px;
     background-color: #EDC363;
 }
+
+ #aa1{
+    width:35%;
+     height:300px;
+     
+    background-color: #B5DE8E;
+     float: left;
+}
+ #aa2{
+    width:30%;
+     height:300px;
+    background-color: #EDC363;
+     float: left;
+}
+
+ #aa3{
+    width:35%;
+     height:300px;
+    background-color: #96FF96;
+     float: left;
+}
+
 #footer{
     width:100%;
     height:100px;
