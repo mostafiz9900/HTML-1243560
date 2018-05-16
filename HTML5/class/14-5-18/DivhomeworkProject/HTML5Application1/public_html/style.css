@@ -1,6 +1,9 @@
 
 body{
-  background: lightblue url("image/a3.jpg") no-repeat; 
+  background: lightblue url("image/a3.jpg") ; 
+  width: 100%;
+  height: auto;
+  margin: 0;
  
    
 }
@@ -96,8 +99,10 @@ body{
 }
 .a7{
    background-color: #0078D7; 
-   width:14%;
-    height:30px; 
+   width:15%;
+    height:30px;
+    
+   
 }
 #manu a:hover{
     text-decoration: none;  
