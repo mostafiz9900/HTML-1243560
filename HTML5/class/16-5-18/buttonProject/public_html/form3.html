@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <fieldset>
+            <legend>Form 3</legend>
+              <form>
+               
+                    
+                    <label>Full Name (Autofocus)</label>
+                    <input type="text" name="fullname" autofocus="autofocus"/>
+                    <br/>
+                    
+                    <label>Max  Length</label>
+                    <input type="text" name="abc" maxlength="maxlength"/>
+                    <br/>
+                    
+                    <label>Age Length</label>
+                <input type="range" name="age"/>
+                    <br/>
+                    
+                    <label>Date pf Birth, Default</label>
+                <input type="dat" name="Dob"/>
+                    <br/>
+                    
+                    <label>Date of Join, dd-mm-yyyy</label>
+                <input type="datetime" name="joiningdate"/>
+                    <br/>
+                    
+              
+                    <br/>
+                    
+                    <label></label>
+                    <input type="text" name="county_code" maxlength="3" pattern="{A-Za-a}(3)" title="Three letter county code"/>
+                    <br/>
+                    
+             
+                    Pass word:   <input type="password" name="pw" pattern=".{6,}" title="Six or More characters"/>
+                    <br/>
+                    
+                
+                    Pass word:   <input type="password" name="pw" pattern="(?=.*\d)(?-.[a-z])(?=.*[a-z]).{8,}* " title="Six or More characters"/>
+                    <br/>
+                    <input type="submit" value="Send"/>
+                
+            </form>
+        </fieldset>
+    </body>
+</html>
