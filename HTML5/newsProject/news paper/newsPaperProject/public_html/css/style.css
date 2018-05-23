@@ -1,0 +1,24 @@
+
+ body{
+     font-family:Arial; font-size:12px; line-height:13px; background:url("images/site_bg.png") top center no-repeat fixed #000
+ }
+ body {
+  background: url("image/site_bg.png") no-repeat fixed center top #000;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 13px;
+}
+ .search{
+   icon: url("image/search.png")
+ }
+ .container row{
+     margin: 5px auto;
+     padding: 10px;
+     vertical-align: middle;
+    border: 5px;
+ }
+   
+
+li.nav-item {
+  padding: 36px 18px 15px 15px;
+}
