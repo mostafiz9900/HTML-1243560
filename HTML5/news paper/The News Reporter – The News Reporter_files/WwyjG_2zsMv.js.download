@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["vmFDB"]); }
+
+__d("requestBoundedAnimationFrame",["cancelAnimationFrame","clearTimeout","performanceNow","requestAnimationFrame","setTimeout"],(function(a,b,c,d,e,f){a=function(a,c,d){var e=b("setTimeout")(function(){e=null,f!==null&&b("cancelAnimationFrame")(f),a(b("performanceNow")())},d),f=b("requestAnimationFrame")(function(c){f=null,e!==null&&b("clearTimeout")(e),a(c)},c);return function(){f!==null&&(b("cancelAnimationFrame")(f),f=null),e!==null&&(b("clearTimeout")(e),e=null)}};e.exports=a}),null);

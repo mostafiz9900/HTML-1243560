@@ -1,0 +1,151 @@
+jQuery(window).load(function() {
+//alert('test');
+jQuery('a.rsswidget').attr("target","_blank");
+});
+
+
+jQuery(function () {
+	jQuery('.heading-font.content .rsswidget').removeAttr("href");
+	jQuery('.rsswidget').parents('ul').addClass("bbc_feed");
+
+	jQuery('#breaking-news-in-header').ticker();
+
+//jQuery('.close').click(function() {
+// var src= jQuery('.active .fb-video').attr("src");
+// jQuery('.active .fb-video').attr("src",'');
+//jQuery('.active .fb-video').attr("src",src);
+// jQuery('.popup_inner').removeClass('active');
+//jQuery('body').removeClass('video_overlay');
+//jQuery(".video_pop_up").css("visibility",'hidden');
+//jQuery(".video_pop_up").css("height",'0');
+//jQuery('.popup_inner').hide();
+
+
+//});
+
+jQuery(".view_video").click(function() {
+	jQuery("."+jQuery(this).attr('data-class')+"a").first().trigger("click");
+	jQuery("."+jQuery(this).attr('data-class')).find("a:first").trigger("click");
+
+});
+var rigttitle =jQuery('.heading-font.content').text();
+
+
+if(rigttitle='Announcement'){
+
+
+	jQuery('.heading-font.content').addClass("Nes");
+
+} else {
+
+	jQuery('.heading-font.content').removeClass("Nes");
+}
+
+jQuery('.carousel').carousel({
+
+	interval: 7000
+
+});
+
+function robly_recaptcha_callback() {
+	valid_captcha = true;
+}
+
+var valid_captcha = false;
+
+jQuery(document).ready(function () {
+
+	jQuery("#robly_embedded_subscribe").click(function (e) {
+		e.preventDefault();
+
+		var email = jQuery("#DATA0").val();
+		if (!is_valid_email_address(email)) {
+			alert("Please enter a valid email address.");
+			return false;
+		}
+
+		var s = document.getElementsByClassName('sublist_fb_option');
+		if (s.length > 0) {
+			var selected = false;
+			for (var i = 0; i < s.length; i++) {
+				if (s[i].checked) {
+					selected = true;
+				}
+			}
+			if (!selected) {
+				alert("Please select a mailing list.");
+				return false;
+			}
+		}
+
+		var f = jQuery("#robly_embedded_subscribe_form");
+		f.submit();
+
+		return false;
+	});
+
+	jQuery("#robly_embedded_subscribe1").click(function (e) {
+		e.preventDefault();
+
+		var email = jQuery("#DATA0").val();
+		if (!is_valid_email_address(email)) {
+			alert("Please enter a valid email address.");
+			return false;
+		}
+
+              if (!jQuery("#DATA1").val()) {
+                  alert("Please enter a First Name");
+                  return false
+              }
+              if (!jQuery("#DATA2").val()) {
+                  alert("Please enter a Last Name");
+                  return false
+              }
+              if (!jQuery("#DATA3").val()) {
+                  alert("Please enter gender field");
+                  return false
+              }
+              if (!jQuery("#DATA4").val()) {
+                  alert("Please fill in Birthday date");
+                  return false
+              }
+
+		var s = document.getElementsByClassName('sublist_fb_option');
+		if (s.length > 0) {
+			var selected = false;
+			for (var i = 0; i < s.length; i++) {
+				if (s[i].checked) {
+					selected = true;
+				}
+			}
+			if (!selected) {
+				alert("Please select a mailing list.");
+				return false;
+			}
+		} 
+
+		var f = jQuery("#robly_embedded_subscribe_form");
+		f.submit();
+ 
+		return false;
+	});
+ 
+ 
+
+
+});
+
+function is_valid_email_address(emailAddress) {
+	var pattern = new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+	return pattern.test(emailAddress);
+}
+
+});
+
+
+
+
+
+
+
+
