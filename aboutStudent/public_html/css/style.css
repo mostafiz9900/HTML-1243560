@@ -1,0 +1,69 @@
+
+.container{
+    width: 80%;
+    height:auto;
+    padding: 1px;
+    margin: 0 auto;
+    background: #A5CAD8;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    min-height: 1000px;
+    
+      
+    
+}
+.head{
+    background:#607D8B;
+   
+}
+nav{
+    background:#BB1314;
+    font-size: 22px;
+     
+}
+
+.head2{
+  background: #FFE793;
+ 
+   
+    
+    
+}
+.head3{
+    background: white;
+}
+.head4{
+    background: #4CAF50;
+}
+.head4{
+    background: white;
+}
+.head5{
+    background: white;
+}
+.head6{
+    background: white;
+}
+.head7{
+    background: white;
+}
+.head8{
+    background: white;
+}
+
+.col-md-1{
+padding: 33px;
+}
+.col-md-5 {
+    padding: 33px;
+}
+.col-md-4 a{
+    padding: 20px;
+}
+.col-md-4{
+    padding: 33px;
+}
+.col-md-2.a {
+    padding: 33px;
+}
